@@ -3,12 +3,13 @@ variables:
   prueba: "robot"
 
 onJoin:
-  - say: "probando movimiento"
+  - command: "skin set WhiteSamael"
+  - say: "I am running forward"
   - move: forward
-    duration: 1000
+    duration: 10000
   - delay: 500
-  - move: left
-    duration: 1000
+
+
 
 
 responses:

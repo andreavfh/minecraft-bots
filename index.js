@@ -9,6 +9,7 @@ const CONFIG_FILE = 'setup.yaml';
 
 let config = { variables: {}, onJoin: [], responses: [] };
 let bot;
+const startTime = Date.now(); // ⏱️ Para tiempo conectado
 
 // Cargar configuración desde YAML
 if (fs.existsSync(CONFIG_FILE)) {
@@ -55,6 +56,35 @@ function runBot() {
     console.log(`${name} conectado desde proxy: ${proxyUrl}`);
     process.send?.('connected');
     runActions(config.onJoin);
+
+    // ⏱️ Iniciar envío periódico de estado
+    setInterval(() => {
+      if (!bot || !bot.entity) return;
+
+      const position = bot.entity.position;
+      const heldItem = bot.heldItem ? bot.heldItem.name : 'Ninguno';
+      const inventory = bot.inventory.items().map(i => `${i.name} x${i.count}`);
+      const uptime = Math.floor((Date.now() - startTime) / 1000);
+
+      process.send?.({
+        type: 'status',
+        data: {
+          name: bot.username,
+          health: bot.health,
+          food: bot.food,
+          position: {
+            x: position.x.toFixed(1),
+            y: position.y.toFixed(1),
+            z: position.z.toFixed(1),
+          },
+          world: bot.game?.dimension ?? 'Desconocido',
+          heldItem,
+          inventory,
+          xp: bot.experience.level,
+          uptime
+        }
+      });
+    }, 3000); // cada 3 segundos
   });
 
   bot.on('message', (message) => {
@@ -123,7 +153,6 @@ async function runActions(actions) {
     }
   }
 }
-
 
 setTimeout(runBot, Number(delay) || 0);
 
