@@ -27,7 +27,7 @@ function runBot() {
     port: 25565,
     username: name,
     agent: new ProxyAgentModule.ProxyAgent(proxyUrl),
-    version: '1.20.4',
+    version: '1.21.1',
   });
 
   bot.once('spawn', () => {
