@@ -1,12 +1,32 @@
 import { createBot } from 'mineflayer';
 import * as ProxyAgentModule from 'proxy-agent';
 import fs from 'fs';
+import YAML from 'yaml';
 
-const [,, name, password, proxyUrl, delay, serverIp = 'localhost', messageToSay = ''] = process.argv;
+const [,, name, password, proxyUrl, delay, serverIp = 'localhost'] = process.argv;
 const REGISTERED_FILE = 'registered.json';
+const CONFIG_FILE = 'setup.yaml';
 
+let config = { variables: {}, onJoin: [], responses: [] };
 let bot;
 
+// Cargar configuración desde YAML
+if (fs.existsSync(CONFIG_FILE)) {
+  const file = fs.readFileSync(CONFIG_FILE, 'utf8');
+  config = YAML.parse(file);
+}
+
+// Agregar la variable "password" desde args si no está
+config.variables = config.variables || {};
+if (!config.variables.password) config.variables.password = password;
+
+// 🧩 Reemplaza {{variables}} en strings
+function applyVariables(str, vars) {
+  if (typeof str !== 'string') return str;
+  return str.replace(/\{\{(.*?)\}\}/g, (_, v) => vars[v.trim()] ?? '');
+}
+
+// 💾 Guarda cuenta en registered.json
 function markAsRegistered(botName, password) {
   let registered = [];
 
@@ -21,6 +41,7 @@ function markAsRegistered(botName, password) {
   }
 }
 
+// 🚀 Ejecuta bot
 function runBot() {
   bot = createBot({
     host: serverIp,
@@ -33,34 +54,17 @@ function runBot() {
   bot.once('spawn', () => {
     console.log(`${name} conectado desde proxy: ${proxyUrl}`);
     process.send?.('connected');
+    runActions(config.onJoin);
   });
 
   bot.on('message', (message) => {
     const msg = message.toString();
     console.log(`${name} mensaje: ${msg}`);
 
-    if (msg.includes('Has superado el número máximo de registros')) {
-      console.log(`${name} → PROXY BLOQUEADO`);
-      bot.quit();
-      return;
-    }
-
-    if (
-      msg.includes('Ya se ha registrado una cuenta') ||
-      msg.includes('inicie sesión') ||
-      msg.includes('/login')
-    ) {
-      bot.chat(`/login ${password}`);
-      return;
-    }
-
-    if (msg.includes('/register')) {
-      bot.chat(`/register ${password} ${password}`);
-      return;
-    }
-
-    if (msg.includes('Acceso exitoso')) {
-      markAsRegistered(name, password);
+    for (const response of config.responses || []) {
+      if (msg.toLowerCase().includes(response.if.toLowerCase())) {
+        runActions([response]);
+      }
     }
   });
 
@@ -74,12 +78,56 @@ function runBot() {
     process.send?.('disconnected');
   });
 
-  bot.on('error', err => console.log(`${name} error: ${err.message}`));
+  bot.on('error', err => {
+    console.log(`${name} error: ${err.message}`);
+  });
 }
+
+// ⏱️ Esperar
+function wait(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function runActions(actions) {
+  const vars = config.variables || {};
+  const validMoves = ['forward', 'left', 'back', 'right', 'jump'];
+
+  for (const action of actions) {
+    if (action.say) {
+      bot.chat(applyVariables(action.say, vars));
+    }
+
+    if (action.command) {
+      const cmd = applyVariables(action.command, vars);
+      bot.chat(cmd.startsWith('/') ? cmd : `/${cmd}`);
+    }
+
+    if (action.move && validMoves.includes(action.move)) {
+      console.log(`${name} moviéndose hacia ${action.move} por ${action.duration || 300}ms`);
+      bot.setControlState(action.move, true);
+      await wait(action.duration || 300);
+      bot.setControlState(action.move, false);
+    }
+
+    if (action.delay) {
+      await wait(action.delay);
+    }
+
+    if (action.register) {
+      markAsRegistered(name, password);
+    }
+
+    if (action.quit) {
+      bot.quit();
+      break;
+    }
+  }
+}
+
 
 setTimeout(runBot, Number(delay) || 0);
 
-// 🎮 Control externo
+// 🎮 Control externo desde bots.mjs
 process.on('message', (command) => {
   if (!bot || !bot.player || !bot.entity) return;
 

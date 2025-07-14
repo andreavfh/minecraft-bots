@@ -1,0 +1,29 @@
+variables:
+  password: "elpepe"
+  prueba: "robot"
+
+onJoin:
+  - say: "probando movimiento"
+  - move: forward
+    duration: 1000
+  - delay: 500
+  - move: left
+    duration: 1000
+
+
+responses:
+  - if: "welcome"
+    say: "i'm a {{prueba}}"
+  - if: "are you ok"
+    say: yes
+  - if: "please move"
+    move: left
+    duration: 600
+  - if: "/register" 
+    command: "register {{password}} {{password}}"
+  - if: "/login"
+    command: "login {{password}}"
+  - if: "Acceso exitoso"
+    register: true
+  - if: "get out"
+    quit: true
