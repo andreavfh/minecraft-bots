@@ -1,137 +1,177 @@
-# Minecraft Multi-Bot Controller with YAML Configuration
+# Minecraft Bots System (TypeScript Version)
 
-This project allows you to run multiple Minecraft bots using [mineflayer](https://github.com/PrismarineJS/mineflayer) with proxy support, dynamic bot registration, and configurable behavior via a YAML file.
+This project allows you to spawn and control multiple Minecraft bots using `mineflayer`, managed via a terminal interface with support for proxies, actions on join, dynamic variables, response automation, and optional chat log saving.
 
----
+## 🛠 Requirements
 
-## Features
+- Node.js 18+
+- TypeScript (`npm i -D typescript`)
+- `mineflayer`, `proxy-agent`, `yaml`, and other dependencies (see below)
 
-- Launch multiple bots concurrently with individual Minecraft accounts.
-- Use SOCKS4 proxies fetched dynamically from ProxyScrape.
-- Configure bot behavior (chat, movement, commands, delays) using a flexible `setup.yaml`.
-- Automatic registration system to save bot credentials (`registered.json`).
-- Interactive console controls to send chat messages and move bots individually or globally.
-- Dynamic response system: bots listen to chat messages and trigger actions based on keywords.
+## 📦 Installation
 
----
+1. Clone or download the repository.
+2. Run the following to install dependencies:
 
-## File Overview
-
-- `bots.mjs`: Master controller that launches bot child processes, manages proxies, registered accounts, and provides console input controls.
-- `index.js`: Bot process that connects to the Minecraft server, reads YAML config, executes actions (`onJoin` and chat `responses`), and listens for commands from the master.
-- `setup.yaml`: YAML configuration file where you define variables, initial actions on join (`onJoin`), and chat-triggered responses.
-- `registered.json`: JSON file that stores registered bot accounts with their passwords.
-- `botnames.json`: JSON array of base names to generate new bot usernames if needed.
-
----
-
-## Setup and Configuration
-
-### 1. Registering Bots
-
-- When a bot connects for the first time, it can run actions including registration.
-- Use the `register` action in `setup.yaml` to run the Minecraft `/register` command automatically with your chosen password.
-- Registered accounts are saved in `registered.json` automatically to avoid re-registering.
-
-Example registration response in `setup.yaml`:
-
-```yaml
-responses:
-  - if: "/register"
-    command: "register {{password}} {{password}}"
+```bash
+npm install
 ```
 
----
+3. Compile TypeScript files:
 
-### 2. YAML Configuration Structure (`setup.yaml`)
+```bash
+npx tsc
+```
+
+> The compiled files will be located in the `dist/` folder.
+
+## 🚀 Running Bots
+
+To start the bots:
+
+```bash
+node dist/botManager.js <server-ip> <number-of-bots>
+```
+
+- `server-ip`: Minecraft server address (default: `localhost`)
+- `number-of-bots`: Number of bots to start (default: 8)
+
+Example:
+
+```bash
+node dist/botManager.js play.example.com 12
+```
+
+## ⚙️ Configuration (`setup.yaml`)
+
+This YAML file defines actions, responses, variables, and logging preferences.
+
+### Example:
 
 ```yaml
 variables:
-  password: "yourPassword"
-  customVar: "value"
+  password: dubai
+  greeting: "Hello, world!"
 
 onJoin:
-  - say: "Hello world!"
+  - say: "{{greeting}}"
+  - delay: 1000
   - move: forward
-    duration: 1000
-  - delay: 500
-  - move: left
-    duration: 1000
+    duration: 600
+  - register: true
 
 responses:
-  - if: "welcome"
-    say: "I'm a {{customVar}} bot!"
-  - if: "/login"
-    command: "login {{password}}"
-  - if: "please move"
-    move: left
-    duration: 600
-  - if: "exit"
-    quit: true
+  - if: "hello"
+    say: "Hi there!"
+
+logging:
+  saveChatLogs: true
+  logsFolder: "./logs"
 ```
 
-- `variables`: Variables to be used inside commands or chat messages with `{{variableName}}` syntax.
-- `onJoin`: Actions the bot executes immediately after spawning.
-- `responses`: Chat-triggered actions. If a received chat message contains the `if` string, the bot executes the corresponding actions.
+### Fields:
 
-Supported actions:
+- `variables`: You can reference these inside `say`, `command`, etc.
+- `onJoin`: Actions to execute when the bot joins the server.
+- `responses`: Actions to execute when certain messages are detected in chat.
+- `logging.saveChatLogs`: If true, saves all incoming messages to a log file.
+- `logging.logsFolder`: Directory to store chat logs (default: `./logs`).
 
-- `say`: Send a chat message.
-- `command`: Send a command (prefixed automatically with `/` if not present).
-- `move`: Move in directions (`forward`, `left`, `back`, `right`, `jump`) for a given `duration` in milliseconds.
-- `delay`: Wait specified milliseconds before next action.
-- `register`: Save bot credentials to `registered.json`.
-- `quit`: Disconnect the bot.
+## 📁 Files Used
 
----
+- `setup.yaml`: Configuration file for variables and behaviors.
+- `registered.json`: Stores bot accounts that have already registered. Format:
 
-## How to Use
+```json
+[
+  { "name": "BotOne", "password": "mypassword" },
+  { "name": "BotTwo", "password": "secure123" }
+]
+```
 
-1. **Install dependencies:**
+- `botnames.json`: List of potential bot base names for generating random accounts.
+
+```json
+["AlphaBot", "BetaBot", "GammaBot"]
+```
+
+## 🔑 Password Logic
+
+When a bot is created:
+- If its name exists in `registered.json`, that password is used.
+- Otherwise, it uses `variables.password` from `setup.yaml`.
+- If neither exists, it defaults to `dubai`.
+
+## 🧠 Controls
+
+Once the bots are running, you can control them via your keyboard:
+
+- `W`, `A`, `S`, `D`, `Space`: Moves bot(s) for 300 ms.
+- `T`: Enter chat mode. Type and press `Enter` to send.
+- `←` / `→`: Switch between individual bots.
+- `↑`: Add a new bot from the `registered.json` pool.
+- `↓`: Disconnect the currently selected bot.
+- `Tab`: Toggle between global (all bots) and individual mode.
+- `Ctrl + C`: Exit the application.
+
+## 📝 Logs
+
+If enabled, each bot logs chat messages to:
+
+```
+logs/<BotName>-YYYY-MM-DD.log
+```
+
+Each line is timestamped in ISO format.
+
+## 🧪 Dev Tips
+
+To recompile TypeScript after making code changes:
+
+```bash
+npx tsc
+```
+
+To run with live reload (optional, using tsx):
+
+```bash
+npx tsx botManager.ts
+```
+
+## 📂 Project Structure
+
+```
+.
+├── botnames.json
+├── registered.json
+├── setup.yaml
+├── src/
+│   ├── botManager.ts
+│   ├── botProcess.ts
+│   ├── config.ts
+│   └── utils.ts
+├── dist/
+│   └── compiled JS files
+├── logs/
+└── README.md
+```
+
+## 📦 Dependencies
 
 ```bash
 npm install mineflayer proxy-agent yaml node-fetch
+npm install -D typescript @types/node
 ```
 
-2. **Prepare configuration files:**
+## ✅ Features
 
-- Create your `setup.yaml` with desired behavior.
-- Create a `botnames.json` file with an array of bot base names, e.g.:
-
-```json
-["BotAlpha", "BotBeta", "BotGamma"]
-```
-
-- Optionally, add registered bots in `registered.json` (auto-managed).
-
-3. **Run the master bot controller:**
-
-```bash
-node bots.mjs [serverIp] [numberOfBots]
-```
-
-- `serverIp` (optional): Minecraft server address (default: `localhost`).
-- `numberOfBots` (optional): Number of bots to spawn (default: 8).
-
-4. **Control bots via keyboard:**
-
-- `t`: Enter chat mode to send messages to bots.
-- `W, A, S, D, Space`: Move bots in respective directions.
-- `Tab`: Toggle between global (all bots) or individual bot control.
-- Arrow keys:
-  - Left/Right: Change selected bot.
-  - Up: Add next registered bot.
-  - Down: Disconnect selected bot.
-- `Ctrl+C`: Exit the program.
-
----
-
-## Notes
-
-- Proxies are fetched dynamically from ProxyScrape (SOCKS4).
-- Bots automatically register/login based on commands in `setup.yaml`.
-- Movements and delays allow simulating player actions.
-- Responses allow creating interactive bot behaviors triggered by chat messages.
+- Multi-bot controller with terminal UI
+- Proxy support (SOCKS4 via proxyscrape)
+- Automatic bot registration and login
+- Dynamic variable injection with `{{variable}}`
+- Automatic response to chat triggers
+- Chat log saving with timestamps
+- Extendable architecture in clean TypeScript
 
 ---
 

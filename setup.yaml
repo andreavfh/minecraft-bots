@@ -1,6 +1,10 @@
 variables:
-  password: "elpepe"
+  password: "weAreTesting"
   prueba: "something"
+
+logging:
+  saveChatLogs: true
+  logsFolder: "./logs"
 
 onJoin:
   - say: "probando {{prueba}}"

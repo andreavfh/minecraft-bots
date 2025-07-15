@@ -2,6 +2,7 @@ import { fork, ChildProcess } from 'child_process';
 import fetch from 'node-fetch';
 import fs from 'fs';
 import readline from 'readline';
+import { loadConfig } from './config';
 
 const REGISTERED_FILE = 'registered.json';
 const BOTNAMES_FILE = 'botnames.json';
@@ -49,10 +50,10 @@ function generateRandomBotName(index: number, usedNames: Set<string>, pool: stri
   const proxies = await getRandomSocksProxy();
   const registeredAccounts = getRegisteredAccounts();
 
-  const botsToLaunch: { name: string, password: string }[] = [];
+  const botsToLaunch: { name: string}[] = [];
 
   registeredAccounts.slice(0, numBots).forEach(acc => {
-    botsToLaunch.push({ name: acc.name, password: acc.password });
+    botsToLaunch.push({ name: acc.name });
   });
 
   const namePool = getAvailableNames();
@@ -61,29 +62,52 @@ function generateRandomBotName(index: number, usedNames: Set<string>, pool: stri
 
   while (botsToLaunch.length < numBots) {
     const name = generateRandomBotName(index++, usedNames, namePool);
-    botsToLaunch.push({ name, password: 'dubai' });
+    botsToLaunch.push({ name });
   }
+    const config = loadConfig(namePool[0]); 
+
+    const saveChatLogs = config.logging?.saveChatLogs ?? false;
+    const logsFolder = config.logging?.logsFolder ?? './logs';
+
+    if (saveChatLogs && !fs.existsSync(logsFolder)) {
+    fs.mkdirSync(logsFolder, { recursive: true });
+    }
+
+    function getLogFileName(botName: string) {
+    const now = new Date();
+    const dateStr = now.toISOString().split('T')[0]; // YYYY-MM-DD
+    return `${logsFolder}/${botName}-${dateStr}.log`;
+    }
+
 
   botsToLaunch.forEach((bot, i) => {
     const proxy = proxies[i % proxies.length];
-    const child = fork('dist/botProcess.js', [bot.name, bot.password, proxy, String(i * 10000), serverIp]);
+    const child = fork('dist/botProcess.js', [bot.name, proxy, String(i * 10000), serverIp]);
     connected.push({ name: bot.name, child });
     children.push(child);
 
-    child.on('message', msg => {
-      if (
-        typeof msg === 'object' &&
-        msg !== null &&
-        'type' in msg &&
-        (msg as any).type === 'status'
-      ) {
-        const data = (msg as any).data;
-        botStatusMap.set(data.name, data);
-        if (!useGlobal && connected[selectedBotIndex]?.name === data.name) {
-          refreshStatus();
-        }
+    child.on('message', (msg: any) => {
+  if (typeof msg === 'object' && msg !== null && 'type' in msg) {
+    if (msg.type === 'status') {
+      const data = msg.data;
+      botStatusMap.set(data.name, data);
+      if (!useGlobal && connected[selectedBotIndex]?.name === data.name) {
+        refreshStatus();
       }
-    });
+    } else if (msg.type === 'log' || msg.type === 'chat') {
+      console.log(msg.message);
+
+      if (saveChatLogs) {
+        const botName = connected.find(c => c.child === child)?.name ?? 'unknown';
+        const logFile = getLogFileName(botName);
+        const logLine = `[${new Date().toISOString()}] ${msg.message}\n`;
+        fs.appendFile(logFile, logLine, err => {
+          if (err) console.error(`Error saving log for ${botName}:`, err);
+        });
+      }
+    }
+  }
+});
   });
 
   readline.emitKeypressEvents(process.stdin);

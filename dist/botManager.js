@@ -7,6 +7,7 @@ const child_process_1 = require("child_process");
 const node_fetch_1 = __importDefault(require("node-fetch"));
 const fs_1 = __importDefault(require("fs"));
 const readline_1 = __importDefault(require("readline"));
+const config_1 = require("./config");
 const REGISTERED_FILE = 'registered.json';
 const BOTNAMES_FILE = 'botnames.json';
 const serverIp = process.argv[2] || 'localhost';
@@ -49,29 +50,51 @@ function generateRandomBotName(index, usedNames, pool) {
     const registeredAccounts = getRegisteredAccounts();
     const botsToLaunch = [];
     registeredAccounts.slice(0, numBots).forEach(acc => {
-        botsToLaunch.push({ name: acc.name, password: acc.password });
+        botsToLaunch.push({ name: acc.name });
     });
     const namePool = getAvailableNames();
     const usedNames = new Set(botsToLaunch.map(b => b.name));
     let index = 0;
     while (botsToLaunch.length < numBots) {
         const name = generateRandomBotName(index++, usedNames, namePool);
-        botsToLaunch.push({ name, password: 'dubai' });
+        botsToLaunch.push({ name });
+    }
+    const config = (0, config_1.loadConfig)(namePool[0]);
+    const saveChatLogs = config.logging?.saveChatLogs ?? false;
+    const logsFolder = config.logging?.logsFolder ?? './logs';
+    if (saveChatLogs && !fs_1.default.existsSync(logsFolder)) {
+        fs_1.default.mkdirSync(logsFolder, { recursive: true });
+    }
+    function getLogFileName(botName) {
+        const now = new Date();
+        const dateStr = now.toISOString().split('T')[0]; // YYYY-MM-DD
+        return `${logsFolder}/${botName}-${dateStr}.log`;
     }
     botsToLaunch.forEach((bot, i) => {
         const proxy = proxies[i % proxies.length];
-        const child = (0, child_process_1.fork)('dist/botProcess.js', [bot.name, bot.password, proxy, String(i * 10000), serverIp]);
+        const child = (0, child_process_1.fork)('dist/botProcess.js', [bot.name, proxy, String(i * 10000), serverIp]);
         connected.push({ name: bot.name, child });
         children.push(child);
-        child.on('message', msg => {
-            if (typeof msg === 'object' &&
-                msg !== null &&
-                'type' in msg &&
-                msg.type === 'status') {
-                const data = msg.data;
-                botStatusMap.set(data.name, data);
-                if (!useGlobal && connected[selectedBotIndex]?.name === data.name) {
-                    refreshStatus();
+        child.on('message', (msg) => {
+            if (typeof msg === 'object' && msg !== null && 'type' in msg) {
+                if (msg.type === 'status') {
+                    const data = msg.data;
+                    botStatusMap.set(data.name, data);
+                    if (!useGlobal && connected[selectedBotIndex]?.name === data.name) {
+                        refreshStatus();
+                    }
+                }
+                else if (msg.type === 'log' || msg.type === 'chat') {
+                    console.log(msg.message);
+                    if (saveChatLogs) {
+                        const botName = connected.find(c => c.child === child)?.name ?? 'unknown';
+                        const logFile = getLogFileName(botName);
+                        const logLine = `[${new Date().toISOString()}] ${msg.message}\n`;
+                        fs_1.default.appendFile(logFile, logLine, err => {
+                            if (err)
+                                console.error(`Error saving log for ${botName}:`, err);
+                        });
+                    }
                 }
             }
         });

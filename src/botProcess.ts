@@ -5,12 +5,12 @@ import { loadConfig, applyVariables } from './config';
 import { wait } from './utils';
 import { CommandMessage } from './types';
 
-const [,, name, password, proxyUrl, delayArg, serverIp = 'localhost'] = process.argv;
+const [,, name, proxyUrl, delayArg, serverIp = 'localhost'] = process.argv;
 const delay = parseInt(delayArg);
 const REGISTERED_FILE = 'registered.json';
 
 let bot: Bot;
-const config = loadConfig(password);
+const config = loadConfig(name);
 const startTime = Date.now();
 
 function markAsRegistered(botName: string, password: string) {
@@ -46,7 +46,7 @@ async function runActions(actions: any[]) {
     }
 
     if (action.delay) await wait(action.delay);
-    if (action.register) markAsRegistered(name, password);
+    if (action.register) markAsRegistered(name, config.variables.password);
     if (action.quit) {
       bot.quit();
       break;
@@ -97,9 +97,8 @@ function runBot() {
 
   bot.on('message', msg => {
     const text = msg.toString();
-    console.log(`[${name}] ${text}`);
     process.send?.({type: 'log', message: `[${name}] ${text}`});
-    
+
     for (const r of config.responses || []) {
       if (text.toLowerCase().includes(r.if.toLowerCase())) runActions([r]);
     }

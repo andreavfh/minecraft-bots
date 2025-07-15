@@ -8,11 +8,11 @@ const proxy_agent_1 = require("proxy-agent");
 const fs_1 = __importDefault(require("fs"));
 const config_1 = require("./config");
 const utils_1 = require("./utils");
-const [, , name, password, proxyUrl, delayArg, serverIp = 'localhost'] = process.argv;
+const [, , name, proxyUrl, delayArg, serverIp = 'localhost'] = process.argv;
 const delay = parseInt(delayArg);
 const REGISTERED_FILE = 'registered.json';
 let bot;
-const config = (0, config_1.loadConfig)(password);
+const config = (0, config_1.loadConfig)(name);
 const startTime = Date.now();
 function markAsRegistered(botName, password) {
     let registered = [];
@@ -43,7 +43,7 @@ async function runActions(actions) {
         if (action.delay)
             await (0, utils_1.wait)(action.delay);
         if (action.register)
-            markAsRegistered(name, password);
+            markAsRegistered(name, config.variables.password);
         if (action.quit) {
             bot.quit();
             break;
@@ -90,7 +90,6 @@ function runBot() {
     });
     bot.on('message', msg => {
         const text = msg.toString();
-        console.log(`[${name}] ${text}`);
         process.send?.({ type: 'log', message: `[${name}] ${text}` });
         for (const r of config.responses || []) {
             if (text.toLowerCase().includes(r.if.toLowerCase()))
