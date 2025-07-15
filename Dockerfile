@@ -8,4 +8,4 @@ COPY . .
 # Instala dependencias
 RUN npm install
 
-CMD ["node", "bots.mjs", "reinosmc.net", "2"]
+CMD ["npm", "start"]

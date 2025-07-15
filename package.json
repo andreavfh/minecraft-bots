@@ -1,10 +1,11 @@
 {
-  "type": "module",
+  "type": "commonjs",
   "name": "minecraft_bots",
   "version": "1.0.0",
   "main": "bots.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/botManager.js localhost 2"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,10 @@
     "mineflayer": "^4.30.0",
     "proxy-agent": "^6.5.0",
     "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "@types/node-fetch": "^2.6.12",
+    "typescript": "^5.8.3"
   }
 }

@@ -1,15 +1,14 @@
 variables:
   password: "elpepe"
-  prueba: "robot"
+  prueba: "something"
 
 onJoin:
-  - command: "skin set WhiteSamael"
-  - say: "I am running forward"
+  - say: "probando {{prueba}}"
   - move: forward
-    duration: 10000
+    duration: 1000
   - delay: 500
-
-
+  - move: left
+    duration: 1000
 
 
 responses:
