@@ -1,0 +1,690 @@
+[2025-07-16T03:25:47.062Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T03:25:47.159Z] [Striker70] Acceso exitoso!
+[2025-07-16T03:28:26.611Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T03:28:26.709Z] [Striker70] Acceso exitoso!
+[2025-07-16T03:39:28.655Z] [Striker70] {"json":{"extra":[{"color":"red","text":"Por favor, inicie sesión con el comando: /login <contraseña>"}],"text":""},"text":"","extra":[{"json":{"color":"red","text":"Por favor, inicie sesión con el comando: /login <contraseña>"},"text":"Por favor, inicie sesión con el comando: /login <contraseña>","color":"red"}]}
+[2025-07-16T03:39:28.751Z] [Striker70] {"json":{"extra":[{"color":"dark_green","text":"Acceso exitoso!"}],"text":""},"text":"","extra":[{"json":{"color":"dark_green","text":"Acceso exitoso!"},"text":"Acceso exitoso!","color":"dark_green"}]}
+[2025-07-16T03:39:29.558Z] [Striker70] {"json":{"extra":[{"color":"gold","text":"[Rio de Plata] "},{"color":"yellow","text":"/town set board [msg]"}],"text":""},"text":"","extra":[{"json":{"color":"gold","text":"[Rio de Plata] "},"text":"[Rio de Plata] ","color":"gold"},{"json":{"color":"yellow","text":"/town set board [msg]"},"text":"/town set board [msg]","color":"yellow"}]}
+[2025-07-16T03:39:29.570Z] [Striker70] {"json":{"extra":[{"color":"gold","text":"[Los E.A.U] "},{"color":"yellow","text":"El pais del futuro y del progreso"}],"text":""},"text":"","extra":[{"json":{"color":"gold","text":"[Los E.A.U] "},"text":"[Los E.A.U] ","color":"gold"},{"json":{"color":"yellow","text":"El pais del futuro y del progreso"},"text":"El pais del futuro y del progreso","color":"yellow"}]}
+[2025-07-16T03:39:29.571Z] [Striker70] {"json":{"extra":[{"color":"gray","text":"["},{"color":"green","text":"+"},{"color":"gray","text":"] "},{"":"Striker70"}],"text":""},"text":"","extra":[{"json":{"color":"gray","text":"["},"text":"[","color":"gray"},{"json":{"color":"green","text":"+"},"text":"+","color":"green"},{"json":{"color":"gray","text":"] "},"text":"] ","color":"gray"},{"json":{"":"Striker70"}}]}
+[2025-07-16T04:54:42.740Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T04:54:42.839Z] [Striker70] Acceso exitoso!
+[2025-07-16T04:54:43.567Z] [Striker70] [Rio de Plata] /town set board [msg]
+[2025-07-16T04:54:43.569Z] [Striker70] [Los E.A.U] El pais del futuro y del progreso
+[2025-07-16T04:54:43.572Z] [Striker70] [+] 
+[2025-07-16T04:56:21.056Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T04:56:21.189Z] [Striker70] Acceso exitoso!
+[2025-07-16T04:56:21.936Z] [Striker70] [Rio de Plata] /town set board [msg]
+[2025-07-16T04:56:21.941Z] [Striker70] [Los E.A.U] El pais del futuro y del progreso
+[2025-07-16T04:56:21.944Z] [Striker70] [+] 
+[2025-07-16T05:02:02.203Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.244Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.542Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.553Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.556Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.570Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.578Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.586Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.610Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.624Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.628Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.633Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.669Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.683Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:02.687Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.153Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.177Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.181Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.185Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.187Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.188Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.190Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.192Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.193Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.291Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.307Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.310Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.316Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.323Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.342Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.354Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.362Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.363Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.370Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.374Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.379Z] [Striker70] Packet IN: [object Object] undefined
+[2025-07-16T05:02:03.385Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.388Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.389Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.391Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.394Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.405Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.411Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.425Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.427Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.431Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.433Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.440Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.442Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.450Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.456Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.490Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.492Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.493Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.494Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.498Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.502Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.505Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.508Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.512Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.514Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.516Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.517Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.563Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.568Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.577Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.581Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.588Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.593Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.597Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.602Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.610Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.615Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.627Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.629Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.634Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.639Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.642Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.648Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.651Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.654Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.657Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.660Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.665Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.667Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.670Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.675Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.678Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.683Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.686Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.690Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.692Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.697Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.699Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.709Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.711Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.713Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.715Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.718Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.721Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.727Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.728Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.731Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.736Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.747Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.757Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.760Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.763Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.766Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.770Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.773Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.787Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.791Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.794Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.798Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.803Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.806Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.809Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.812Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.815Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.819Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.821Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.823Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.830Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.834Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.841Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.849Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.858Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.867Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.872Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.881Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.886Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.889Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.896Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.900Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.903Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.905Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.907Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.911Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.914Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.918Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.930Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.940Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.944Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.947Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.951Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.958Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.962Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.966Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.969Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.973Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.975Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.982Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.986Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.989Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.992Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.994Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:03.998Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.001Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.004Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.007Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.009Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.022Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.032Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.047Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.050Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.053Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.055Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.058Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.061Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.065Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.068Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.073Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.080Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.088Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.107Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.118Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.121Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.126Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.134Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.136Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.148Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.156Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.180Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.184Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.192Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.199Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.209Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.212Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.215Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.221Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.224Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.234Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.240Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.246Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.259Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.265Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.269Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.274Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.280Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.290Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.292Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.297Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.302Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.305Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.310Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.314Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.316Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.319Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.323Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.327Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.334Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.337Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.343Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.350Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.360Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.366Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.372Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.374Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.378Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.380Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.383Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.396Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.399Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.404Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.408Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.409Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.416Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.419Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.422Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.423Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.426Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.430Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.437Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.439Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.441Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.443Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.448Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.452Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.453Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.459Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.461Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.467Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.473Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.480Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.485Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.488Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.491Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.497Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.500Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.504Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.512Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.515Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.520Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.523Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.527Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.530Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.534Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.536Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.538Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.539Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.541Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.542Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.545Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.548Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.549Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.555Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.561Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.565Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.569Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.573Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.576Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.579Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.582Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.584Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.587Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.590Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.591Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.593Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.595Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.597Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.598Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.599Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.601Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.605Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.609Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.610Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.612Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.613Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.615Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.617Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.619Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.623Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.625Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.627Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.629Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.632Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.634Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.637Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.638Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.639Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.641Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.643Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.644Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.647Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T05:02:04.655Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.660Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.662Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.663Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.666Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.668Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.783Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.788Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.789Z] [Striker70] Acceso exitoso!
+[2025-07-16T05:02:04.838Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.838Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.840Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.841Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.844Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.846Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.851Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.852Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.855Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.856Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.857Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.858Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.860Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.864Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.866Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.868Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.869Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.870Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.871Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.873Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.874Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.874Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.876Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.879Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.880Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.882Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.883Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.886Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.889Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.890Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.891Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.895Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.898Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.899Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.901Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.902Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.903Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.906Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.909Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.914Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.916Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.917Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.919Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.920Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.921Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.922Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.924Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.925Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.926Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.927Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.928Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.929Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.930Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.931Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.933Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.934Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.937Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.938Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.939Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.940Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.941Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.941Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.942Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.943Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.944Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.944Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.945Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.946Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.947Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.947Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.948Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.949Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.949Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.951Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.950Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.952Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.955Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.956Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.953Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.956Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.957Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.959Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.961Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.960Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.962Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.963Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.964Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.965Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.967Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.966Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.969Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.968Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.970Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.971Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.973Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.974Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.975Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.974Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.975Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.976Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.977Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.979Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.979Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.980Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.981Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.983Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.982Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.981Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.985Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.987Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.987Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.990Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.988Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.990Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.989Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.991Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.991Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.993Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.994Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.996Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.995Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.997Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.999Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:04.998Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.000Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.002Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.004Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.006Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.007Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.003Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.009Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.009Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.008Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.010Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.013Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.016Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.018Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.020Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.021Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.022Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.023Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.024Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.023Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.025Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.029Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.034Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.042Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.048Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.055Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.066Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.076Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.079Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.085Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.088Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.092Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.096Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.101Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.106Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.108Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.111Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.116Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.121Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.131Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.135Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.140Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T05:02:05.147Z] [Striker70] Packet IN: undefined undefined
+[2025-07-16T13:03:34.298Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T13:03:38.076Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T13:03:39.298Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T13:06:53.648Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T13:06:57.460Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T13:06:58.647Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T13:09:27.118Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T13:09:28.353Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T13:09:28.550Z] [Striker70] Acceso exitoso!
+[2025-07-16T13:09:29.339Z] [Striker70] [Rio de Plata] /town set board [msg]
+[2025-07-16T13:09:29.341Z] [Striker70] [Los E.A.U] El pais del futuro y del progreso
+[2025-07-16T13:09:29.343Z] [Striker70] [+] 
+[2025-07-16T19:17:34.798Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T19:17:34.878Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:13.666Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T19:19:13.829Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:18.830Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:23.830Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:28.835Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:33.842Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:38.827Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:43.829Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:48.828Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:53.828Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:19:58.837Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:03.832Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:08.829Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:13.827Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:18.831Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:23.827Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:28.828Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:33.875Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:38.828Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:43.839Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:48.835Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:53.872Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:20:58.839Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:21:03.826Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:21:08.828Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:21:13.835Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:21:18.854Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:21:23.830Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:21:56.392Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T19:21:56.503Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:01.027Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:06.032Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:11.048Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:15.979Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:20.978Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:25.980Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:30.990Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:35.977Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:40.976Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:45.976Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:50.980Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:22:55.986Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:23:01.064Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:23:05.980Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:23:10.984Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:23:15.983Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:23:20.978Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:23:26.004Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:24:25.432Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T19:24:25.878Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:24:30.906Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:24:35.909Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:24:40.880Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:24:45.876Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:24:50.875Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:25:25.872Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T19:25:25.932Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:25:30.627Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:37:51.149Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:37:55.874Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:38:00.867Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:38:05.864Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:38:10.864Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:38:40.937Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:38:45.814Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:38:50.812Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:38:55.813Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:00.826Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:05.815Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:10.845Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:15.821Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:20.822Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:25.815Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:30.813Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:35.814Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:40.818Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:45.822Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:50.818Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:39:55.817Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:00.814Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:05.818Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:10.816Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:15.813Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:20.834Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:25.827Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:30.817Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:35.811Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:40.815Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:45.813Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:50.819Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:40:55.811Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:00.876Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:05.812Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:10.810Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:15.813Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:20.813Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:25.810Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:30.810Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:35.811Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:40.809Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:45.810Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:50.811Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:41:55.810Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:00.821Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:05.810Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:10.817Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:15.813Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:20.815Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:25.811Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:30.814Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:42:35.818Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:01.711Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:06.742Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:11.710Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:16.710Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:21.759Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:26.713Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:31.708Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:36.714Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:41.708Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:46.709Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:51.712Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:44:56.709Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:01.711Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:06.712Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:11.708Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:16.713Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:21.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:26.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:31.709Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:36.714Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:41.708Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:46.724Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:51.709Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:56.706Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:45:58.868Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T19:46:01.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:06.706Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:11.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:16.709Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:21.708Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:26.716Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:31.706Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:36.706Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:41.712Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:46.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:51.720Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:46:56.706Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:01.715Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:06.708Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:11.837Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:16.708Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:21.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:26.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:31.706Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:36.766Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:41.709Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:46.705Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:51.704Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:47:56.707Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:50:37.306Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:50:42.302Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:50:47.305Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:50:52.304Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:50:57.323Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:51:02.316Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:51:07.303Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:51:12.305Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:51:17.332Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:51:22.303Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:51:26.894Z] [Striker70] You need to be authenticated in order to use this command!
+[2025-07-16T19:51:27.302Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:51:27.507Z] [Striker70] Acceso exitoso!
+[2025-07-16T19:53:36.453Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:53:41.452Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:53:46.452Z] [Striker70] Por favor, inicie sesión con el comando: /login <contraseña>
+[2025-07-16T19:53:46.937Z] [Striker70] You need to be authenticated in order to use this command!

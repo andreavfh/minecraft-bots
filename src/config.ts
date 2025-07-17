@@ -2,6 +2,7 @@ import fs from 'fs';
 import YAML from 'yaml';
 
 const CONFIG_FILE = 'setup.yaml';
+const REGISTERED_FILE = 'registered.json';
 const DEFAULT_PASSWORD = 'dubai';
 
 export interface Config {
@@ -12,31 +13,52 @@ export interface Config {
     saveChatLogs?: boolean;
     logsFolder?: string;
   };
+  auth?: {
+    requireAuth?: boolean;
+    authSuccessMessage?: string;
+    loginTriggerMessages?: string[];
+    registerTriggerMessages?: string[];
+    loginCommand?: string;
+    registerCommand?: string;
+  };
 }
 
-export function loadConfig(name: string): Config {
-  let config: Config = { variables: {}, onJoin: [], responses: [] };
+export function loadConfig(botName: string): Config {
+  const file = fs.readFileSync(CONFIG_FILE, 'utf8');
+  const parsed = YAML.parse(file) || {};
 
-  if (fs.existsSync(CONFIG_FILE)) {
-    const file = fs.readFileSync(CONFIG_FILE, 'utf8');
-    config = YAML.parse(file);
+  parsed.variables ??= {};
+  parsed.responses ??= [];
+  parsed.onJoin ??= [];
+  parsed.auth ??= {};
+
+  // Leer passwords registradas
+  let registeredPassword: string | undefined;
+  if (fs.existsSync(REGISTERED_FILE)) {
+    try {
+      const registered = JSON.parse(fs.readFileSync(REGISTERED_FILE, 'utf8')) as { name: string; password: string }[];
+      const found = registered.find(acc => acc.name === botName);
+      if (found && found.password) {
+        registeredPassword = found.password;
+      }
+    } catch (e) {
+      console.warn(`Error leyendo ${REGISTERED_FILE}:`, e);
+    }
   }
 
-  let password = DEFAULT_PASSWORD;
-  if (fs.existsSync('registered.json')) {
-    const registered = JSON.parse(fs.readFileSync('registered.json', 'utf8'));
-    const found = registered.find((r: { name: string; password: string }) => r.name === name);
-    if (found) password = found.password;
-    else if (config.variables?.password) password = config.variables.password;
-  } else if (config.variables?.password) {
-    password = config.variables.password;
+  // Priorizar contraseña en registered.json si existe
+  if (registeredPassword) {
+    parsed.variables.password = registeredPassword;
+  } else if (!parsed.variables.password) {
+    parsed.variables.password = DEFAULT_PASSWORD;
   }
 
-  config.variables.password = password;
+  parsed.auth.requireAuth ??= false;
+  parsed.auth.authSuccessMessage ??= '';
+  parsed.auth.loginTriggerMessages ??= ['/login'];
+  parsed.auth.registerTriggerMessages ??= ['/register'];
+  parsed.auth.loginCommand ??= '/login {{password}}';
+  parsed.auth.registerCommand ??= '/register {{password}} {{password}}';
 
-  return config;
-}
-
-export function applyVariables(str: string, vars: Record<string, string>) {
-  return str.replace(/\{\{(.*?)\}\}/g, (_, v) => vars[v.trim()] ?? '');
+  return parsed;
 }

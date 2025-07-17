@@ -221,7 +221,8 @@ function generateRandomBotName(index: number, usedNames: Set<string>, pool: stri
       }
       const next = available[0];
       const proxy = proxies[children.length % proxies.length];
-      const child = fork('dist/botProcess.js', [next.name, next.password, proxy, String(children.length * 10000), serverIp]);
+      const child = fork('dist/botProcess.js', [next.name, proxy, String(children.length * 10000), serverIp]);
+
       connected.push({ name: next.name, child });
       children.push(child);
       selectedBotIndex = connected.length - 1;

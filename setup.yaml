@@ -1,33 +1,40 @@
 variables:
-  password: "weAreTesting"
+  password: "dubai"
   prueba: "something"
 
 logging:
   saveChatLogs: true
   logsFolder: "./logs"
 
-onJoin:
-  - say: "probando {{prueba}}"
-  - move: forward
-    duration: 1000
-  - delay: 500
-  - move: left
-    duration: 1000
+auth:
+  requireAuth: true
+  authSuccessMessage: "Acceso exitoso"
+  loginTriggerMessages:
+    - "Por favor, inicie sesión"
+    - "/login"
+  registerTriggerMessages:
+    - "Por favor, regístrese"
+    - "/register"
+  loginCommand: "/login {{password}}"
+  registerCommand: "/register {{password}} {{password}}"
 
+onJoin:
+  - say: "elpepe"
 
 responses:
   - if: "welcome"
     say: "i'm a {{prueba}}"
+    once: false
+
   - if: "are you ok"
     say: yes
+    once: false
+
   - if: "please move"
     move: left
     duration: 600
-  - if: "/register" 
-    command: "register {{password}} {{password}}"
-  - if: "/login"
-    command: "login {{password}}"
-  - if: "Acceso exitoso"
-    register: true
+    once: false
+
   - if: "get out"
     quit: true
+    once: false
